@@ -1,0 +1,7 @@
+label{
+    text-align: center;
+}
+.done {
+    text-decoration: line-through;
+    color: green;
+}

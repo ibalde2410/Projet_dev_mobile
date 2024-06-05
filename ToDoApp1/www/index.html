@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+    <meta name="color-scheme" content="light dark">
+    <link rel="stylesheet" href="css/index.css">
+<!--    <link rel="stylesheet" href="lib/jquery.mobile-1.4.5.min.css">-->
+<!--    <link rel="stylesheet" href="lib/themes/themerollerjquery1.min.css">-->
+<!--    <script src="lib/jquery.min.js"></script>-->
+<!--    <script src="lib/jquery.mobile-1.4.5.min.js"></script>-->
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="lib/themes/jquerythemeroller2.css" />x`
+<!--    <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />-->
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <title>ToDoList</title>
+</head>
+<body>
+<div class="page">
+    <div data-role="header">
+        <h1>ToDo List App</h1>
+    </div>
+    <div role="main" class="ui-content">
+        <form>
+            <label for="task">Liste des tâches</label>
+            <input type="text" id="task">
+            <input type="button" value="Ajouter" onclick="ajouterTask()">
+            <input type="button" value="Réinitialiser" onclick="reinitialiserList()">
+            <ul id="taskList" data-role="listview" data-inset="true"></ul>
+            <label for="completedTasks">Tâches Terminées</label>
+            <ul id="completedTaskList" data-role="listview" data-inset="true"></ul>
+        </form>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <h1>IB &copy; Juin 2024</h1>
+    </div>
+</div>
+</body>
+</html>
